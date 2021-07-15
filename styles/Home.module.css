@@ -1,0 +1,209 @@
+.container {
+    min-height: 86vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fefbe9;
+    color: #2A6032;
+    font-family: 'Tangerine', serif;
+    font-size: 1.2rem;
+    height: 100vh;
+}
+
+.aboutcontainer {
+    min-height: 83.2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fefbe9;
+    color: #2A6032;
+    font-family: 'Tangerine', serif;
+    font-size: 1.2rem;
+    z-index: 99
+}
+
+.main {
+    padding: 5rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-color: #fefbe9;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    border-top: 0px solid #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    position: sticky;
+}
+
+.layoutcontainer {
+    background-image: url('../public/images/background.png');
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-size: cover;
+}
+
+.header a {
+    display: flex;
+    flex-grow: 0.03;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    border-top: 0px solid #eaeaea;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    flex-direction: row-reverse;
+}
+
+.footer a {
+    display: flex;
+    flex-grow: 0.03;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+    text-decoration: underline;
+}
+
+.title {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 4rem;
+}
+
+.title,
+.description {
+    text-align: center;
+}
+
+.description {
+    line-height: 1.5;
+    font-size: 1.5rem;
+    text-overflow: inherit;
+}
+
+.code {
+    font-family: 'Tangerine' serif;
+    color: #183a1d;
+    display: flex;
+}
+
+.code a:hover,
+.code a:focus,
+.code a:active {
+    color: #ee993e;
+}
+
+.grid {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    clip-path: circle(35%);
+}
+
+.form {
+    margin-top: 0px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    color: #ee993e;
+    font-family: 'Tangerine' serif;
+}
+
+.form input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #e1eedd;
+    color: #183a1d;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.form textarea {
+    width: 100%;
+    height: 120px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    background-color: #e1eedd;
+    color: #183a1d;
+}
+
+.form button {
+    border-radius: 12px;
+    padding: 10px 24px;
+    background-color: #ee993e;
+    font-family: 'Tangerine' serif;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.card {
+    margin: 1.2rem;
+    padding: 6rem;
+    text-decoration: none;
+    border: 2px solid #eaeaea;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    color: #ee993e;
+    font-family: 'Tangerine' serif;
+    object-fit: contain;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+    color: #183a1d;
+    border-color: #183a1d;
+}
+
+.form:hover,
+.form:focus,
+.form:active {
+    color: #183a1d;
+    border-color: #183a1d;
+}
+
+.card p {
+    font-size: 1.27rem;
+    line-height: 1.5;
+}
+
+.form p {
+    margin: 5px;
+    font-size: 1.27rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .grid {
+        width: 100%;
+        flex-direction: column;
+    }
+}
